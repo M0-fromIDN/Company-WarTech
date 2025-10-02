@@ -1,0 +1,84 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #d6d4fd, #b0c4fd, #8dcafe);
+  padding: 0.8rem 1rem;
+  
+}
+.section{
+  width: 10rem;
+  height: 10rem;
+}
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  flex-direction: row;
+}
+
+.navbar a:hover {
+  color: #ffe082 !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+/* Section Backgrounds */
+.section-bg-light {
+  height: 100vh;
+  background: #f8f9fa;
+}
+
+.section-bg-gray {
+  height: 100vh;
+  background: #e0ecf7;
+}
+
+.section-bg-dark {
+  height: 100vh;
+  background: #dee2e6;
+}
+
+/* Responsive Navbar - Hamburger */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none !important;
+    flex-direction: column;
+    background: linear-gradient(90deg, #d6d4fd, #b0c4fd, #8dcafe);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex !important;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Navbar Container Hover */
+nav>.container>ul>li:hover {
+  background-color: black;
+  border-radius: 5px;
+}
+
