@@ -1,7 +1,6 @@
 :root {
-  --brand-1: #000000;
-  --brand-2: #840000;
-  --brand-3: #ffffff;
+  --brand-1: #0d6efd;
+  --brand-2: #8dcafe;
   --accent: #ffe082;
   --bg-light: #f8f9fa;
   --font: 'Poppins', sans-serif;
@@ -17,13 +16,15 @@ html, body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: var(--font);
-  background: #000000;
+  background: #fff;
   color: #222;
 }
 
+/* ===================== */
 /* NAVBAR */
+/* ===================== */
 .navbar {
-  background: linear-gradient(90deg, #000000, #820000, #c10000);
+  background: linear-gradient(90deg, #d6d4fd, #b0c4fd, #8dcafe);
   padding: 0.8rem 1rem;
   z-index: 1000;
 }
@@ -35,11 +36,6 @@ html, body {
   letter-spacing: 1px;
   text-decoration: none;
 }
-.navbar-brand:hover{
-  color: #6c757d;
-  transition: 0.5s ease-in-out;
-}
-
 
 .navbar a.nav-link {
   color: #fff;
@@ -52,10 +48,10 @@ html, body {
 
 .navbar a.nav-link:hover {
   color: var(--brand-1) !important;
-  background: rgba(255, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.12);
 }
 
-/* HAMBURGER */
+/* ============ HAMBURGER ============ */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -103,18 +99,7 @@ html, body {
   top: 9px;
   transform: rotate(-135deg);
 }
-.about-h3{
-  color: red;
-}
-.mb-3{
-  color: #eee;
-}
-.mb-4{
-  color: #eee;
-}
-.btn-about{
-  color: #eee;
-}
+
 /* Nav Links */
 .nav-links {
   display: flex;
@@ -125,7 +110,9 @@ html, body {
   display: none;
 }
 
+/* ===================== */
 /* MOBILE MENU */
+/* ===================== */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -138,7 +125,7 @@ html, body {
     width: 100%;
     flex-direction: column;
     text-align: center;
-    background: linear-gradient(90deg, #ff0a0a, #7e0000, #410000);
+    background: linear-gradient(90deg, #d6d4fd, #b0c4fd, #8dcafe);
     display: none;
     padding: 15px 0;
     opacity: 0;
@@ -161,7 +148,9 @@ html, body {
   }
 }
 
+/* ===================== */
 /* HERO SECTION */
+/* ===================== */
 .hero {
   min-height: 80vh;
   padding-top: 6rem;
@@ -170,12 +159,12 @@ html, body {
 
 .hero h1 {
   font-size: 2.6rem;
-  color: red;
+  color: #0b1b3a;
   animation: fadeInUp 0.8s ease both;
 }
 
 .hero-sub {
-  color: #ffffff;
+  color: #444;
   font-size: 1.05rem;
   max-width: 520px;
   animation: fadeInUp 0.9s ease both;
@@ -193,7 +182,9 @@ html, body {
   animation: float 6s ease-in-out infinite;
 }
 
+/* ===================== */
 /* ABOUT */
+/* ===================== */
 .about {
   padding-top: 4rem;
 }
@@ -204,7 +195,9 @@ html, body {
   color: var(--brand-1);
 }
 
+/* ===================== */
 /* TEAM */
+/* ===================== */
 .team-card {
   border: none;
   border-radius: 15px;
@@ -220,11 +213,13 @@ html, body {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border: 5px solid #000000;
+  border: 5px solid #fff;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* ===================== */
 /* SERVICES */
+/* ===================== */
 .service-card {
   border: none;
   border-radius: 12px;
@@ -246,7 +241,9 @@ html, body {
   transform: scale(1.15);
 }
 
+/* ===================== */
 /* CONTACT */
+/* ===================== */
 .btn-contact {
   background: var(--brand-1);
   color: #fff;
@@ -261,7 +258,9 @@ html, body {
   transform: translateY(-3px);
 }
 
+/* ===================== */
 /* FOOTER */
+/* ===================== */
 footer {
   background: #fff;
   border-top: 1px solid #eee;
