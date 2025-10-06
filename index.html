@@ -1,88 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WarTech</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WarTech - Company Profile</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+  <!-- NAVBAR -->
+  <nav class="navbar fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#" class="navbar-brand">WarTech Corp.</a>
 
-<div class="h1-title"><h1>WarTech</h1></div>
+      <!-- Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-<!-- Navbar -->
- <nav class="navbar fixed-top">
-    <div class="container d-flex justify-content-between align-items-ceenter">
-        <a href="#" class="navbar-brand">WarTech Corp.</a>
-    
-    
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
-    
-    <ul cla>
-        <li class="mx-2"><a href="#home" class="nav-link">Menu</a></li>
-        <li class="mx-2">
-            <a href="#about" class="nav-link">About us</a>
-        </li>
-        <li class="mx2"><a href="#team" class="nav-link">Our Team</a></li>
-        <li class="mx2"><a href="#services" class="nav-link">Services</a></li>
-        <li class="mx2"><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-</div>
- </nav>
-<!-- Hero Section -->
- <section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-        <div class="row">
-            <!-- Text Section -->
-             <div class="col-lg-6 d-flex flex-column justify-content-center">
-                <h1 class="mb-3">WarTech Welcomes You</h1>
-                <p class="mb-4">
-                    WarTech Corp forges battlefield-grade weaponry and tactical systems 
-                    engineered for decisive outcomes. Trusted by sovereign forces and elite units, 
-                    we deliver uncompromising firepower, precision, and durability when missions demand superiority. 
-                </p>
-                <a href="#about" class="btn btn-primary btn-lg">learn more</a>
-             </div>
-             <!-- Image Section -->
-              <div class="col-lg-6 hero-img">
-                <img src="assets/img/Buildings.png" class="img-fluid" alt="Hero Image" style="border-radius: 9px;">
-              </div>
-        </div>
+      <!-- Navbar Links -->
+      <ul class="nav-links d-flex list-unstyled mb-0 align-items-center">
+        <li class="mx-2"><a href="#hero" class="nav-link">Home</a></li>
+        <li class="mx-2"><a href="#about" class="nav-link">About</a></li>
+        <li class="mx-2"><a href="#team" class="nav-link">Our Team</a></li>
+        <li class="mx-2"><a href="#services" class="nav-link">Services</a></li>
+        <li class="mx-2"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
- </section>
+  </nav>
 
- <!-- About Us -->
-  <section id="about" class="about py-5">
+  <!-- HERO -->
+  <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
-        <!-- Title -->
-         <h2 class="section-title text-center mb-5">
-            About Us
-        </h2>
-
-        <div class="row align-items-center">
-            <!-- Image -->
-             <div class="col-md-6 text-center mb-4 mb-md-0">
-                <img src="assets/img/Arms dealing.jpeg" alt="Arms dealing expo" class="img-fluid rounded shadow">
-             </div>
-             <!-- Text Section -->
-              <div class="col-md-6">
-                <h3 class="mb-3">Who we are</h3>
-                <p class="mb-3"></p>
-                <p class="mb-4"></p>
-                <a href="#services" class="btn btn-about">Learn more about us</a>
-              </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 class="mb-3">WarTech Welcomes You</h1>
+          <p class="mb-4 hero-sub">
+            WarTech Corp forges battlefield-grade weaponry and tactical systems engineered for decisive outcomes.
+            Trusted by sovereign forces and elite units, we deliver uncompromising firepower, precision, and durability
+            when missions demand superiority.
+          </p>
+          <div>
+            <a href="#about" class="btn btn-primary btn-lg me-2">Learn More</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+          </div>
         </div>
+        <div class="col-lg-6 hero-img text-center mt-4 mt-lg-0">
+          <img src="assets/img/Buildings.png" alt="Hero Image" class="img-fluid rounded hero-image">
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- company -->
-   <section id="team" class="team py-5 bg-light">
+  <!-- ABOUT -->
+  <section id="about" class="about py-5 section-bg-light">
     <div class="container">
-        <h2 class="section-title "></h2>
+      <h2 class="section-title text-center mb-5">About Us</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img src="assets/img/Arms dealing.jpeg" alt="Arms dealing" class="img-fluid rounded shadow about-image">
+        </div>
+        <div class="col-md-6">
+          <h3 class="about-h3">Who We Are</h3>
+          <p class="mb-3">
+            WarTech is a defense systems manufacturer specialising in advanced small arms, tactical systems, and
+            integrated battlefield solutions. We combine engineering excellence, rigorous testing, and field-driven
+            feedback to supply reliable solutions for demanding missions.
+          </p>
+          <p class="mb-4">
+            Our mission is to provide responsible, precision-engineered equipment to authorized entities, ensuring
+            safety, durability, and unmatched performance.
+          </p>
+          <a href="#services" class="btn btn-about">Learn more about us</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-   </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- TEAM -->
+  <section id="team" class="team py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Our Team</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+          <div class="card team-card shadow-sm text-center">
+            <img src="assets/img/taliban.webp" class="team-img rounded-circle mx-auto mt-4" alt="Taliban">
+            <div class="card-body">
+              <h5 class="mb-1">The Taliban</h5>
+              <p class="text-muted small">Lead Marketing Team</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card team-card shadow-sm text-center">
+            <img src="assets/img/arms dealer 2.jpg" class="team-img rounded-circle mx-auto mt-4" alt="Team Member 2">
+            <div class="card-body">
+              <h5 class="mb-1">David Packouz</h5>
+              <p class="text-muted small">Systems Architect</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card team-card shadow-sm text-center">
+            <img src="assets/img/goat of arms dealers.webp" class="team-img rounded-circle mx-auto mt-4" alt="Team Member 3">
+            <div class="card-body">
+              <h5 class="mb-1">Samuel Cummings</h5>
+              <p class="text-muted small">R&D Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Services</h2>
+        <p class="text-muted">Core capabilities and offerings</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card service-card h-100 text-center p-4 shadow-sm">
+            <div class="icon mb-3"><i class="bi bi-gear-fill fs-1"></i></div>
+            <h5>Custom Weapon Systems</h5>
+            <p class="small">Design & manufacture of system-level weapon solutions tailored to client requirements.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 text-center p-4 shadow-sm">
+            <div class="icon mb-3"><i class="bi bi-laptop fs-1"></i></div>
+            <h5>Tactical Electronics</h5>
+            <p class="small">Integrated targeting, communication, and sensor packages for mission-critical operations.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 text-center p-4 shadow-sm">
+            <div class="icon mb-3"><i class="bi bi-shield-lock-fill fs-1"></i></div>
+            <h5>Training & Support</h5>
+            <p class="small">Operator training, maintenance programs, and field-support services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 section-bg-gray">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Contact</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>Contact Info</h5>
+          <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Jl. Contoh No. 123, Bogor, Indonesia</p>
+          <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i>+62 21 555 0123</p>
+          <p class="small mb-1"><i class="bi bi-envelope-fill me-2"></i>info@wartech.example</p>
+          <hr>
+          <h6 class="mb-2">Working Hours</h6>
+          <p class="small text-muted mb-0">Mon - Fri: 09:00 - 17:00</p>
+        </div>
+
+        <div class="col-md-8">
+          <form id="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+                <div class="invalid-feedback">Please write a message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-contact">Send Message</button>
+                <span id="form-status" class="ms-3 text-success d-none">Message ready to send (demo).</span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- WORKING GOOGLE MAP -->
+        <div class="col-12 mt-4">
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.647447719176!2d106.82243831524345!3d-6.175387995528428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5b8c233ddc5%3A0x3b0f5c8b4206dc5b!2sMonas!5e0!3m2!1sen!2sid!4v1696500000000!5m2!1sen!2sid"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <small class="text-muted">&copy; <span id="year"></span> WarTech Corp. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
