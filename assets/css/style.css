@@ -114,6 +114,11 @@ html, body {
 /* MOBILE MENU */
 /* ===================== */
 @media (max-width: 768px) {
+  .hero-img{
+  justify-content: center;
+
+  }
+  
   .hamburger {
     display: block;
   }
